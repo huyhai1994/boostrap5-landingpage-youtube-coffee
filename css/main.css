@@ -20,6 +20,7 @@
     bottom: 0;
     background-color: rgb(255, 247, 231);
     z-index: 4;
+    /*TODO: s the CSS property that controls the stacking order of overlapping elements on a page*/
     /*TODO: translating the navbar bellow the icons*/
 }
 
@@ -28,4 +29,9 @@
     top: 20px;
     right: 16px;
     background-color: rgbA(255, 255, 255, 0.6);
+}
+
+.dropdown-nav__container {
+    height: 100vh; /*TODO: -> stop the animation*/
+    padding: 0 1rem;
 }
