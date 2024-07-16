@@ -15,6 +15,46 @@ a:hover {
     color: var(--primary-color-hightlight)
 }
 
+@media (min-width: 544px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    .container-custom {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
+
+}
+
+
+@media (min-width: 1600px) {
+
+}
+
+
+/*TODO: custom button*/
+
+/*TODO: custom container*/
+.container-custom {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+/*TODO: header*/
 .header {
     z-index: 2;
     /*TODO: z-index ???*/
@@ -35,6 +75,9 @@ a:hover {
 
 .dropdown-nav__closeNavBtn {
     position: absolute;
+    /*TODO: Relative positioning: The element creates its own coordinate axes, at a location offset from the viewport coordinate axis. It is Part of document flow but shifted.*/
+
+    /*TODO: Absolute positioning: An element searches for the nearest available coordinate axes among its parent elements. The element is then positioned by specifying offsets from this coordinate axis. It is removed from document normal flow. */
     top: 20px;
     right: 16px;
     background-color: rgbA(255, 255, 255, 0.6);
@@ -74,5 +117,9 @@ a:hover {
     bottom: 0;
     background-color: var(--primary-color);
     opacity: 0.5;
+    z-index: 1;
+}
+
+.hero__content {
     z-index: 1;
 }
