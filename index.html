@@ -21,7 +21,7 @@
 <body>
 
 <!--TODO: Header Start here-->
-<header class="header p-3 position-absolute start-0 top-0 end-0" style="background-color: var(--primary-color)">
+<header class="header p-3 position-absolute start-0 top-0 end-0">
     <!--TODO: Because it the position-absolute -> need the z indexs -->
     <div class="d-flex justify-content-between align-items-center">
         <!--TODO: d-flex-> converting the div to flex box-->
@@ -107,7 +107,11 @@
 
 <!--TODO: Hero Start--align-items-start-->
 <section class="hero">
-    <video></video>
+    <div class="hero__overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero__video">
+        <source src="./img/Coffee%20reels%20-%20macro%20videos.mp4" type="video/mp4">
+        </source>
+    </video>
 
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -52,3 +52,27 @@ a:hover {
     overflow: hidden;
     /*TODO: avoid scroll bar below!!!*/
 }
+
+.hero__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    /*TODO: Dich chuyen video can giua*/
+    z-index: 0;
+}
+
+.hero__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    z-index: 1;
+}
