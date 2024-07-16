@@ -6,6 +6,15 @@
 
 }
 
+/*TODO: change the color of link*/
+a {
+    color: var(--primary-color)
+}
+
+a:hover {
+    color: var(--primary-color-hightlight)
+}
+
 .header {
     z-index: 2;
     /*TODO: z-index ???*/
@@ -34,4 +43,12 @@
 .dropdown-nav__container {
     height: 100vh; /*TODO: -> stop the animation*/
     padding: 0 1rem;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    /*TODO: avoid scroll bar below!!!*/
 }
