@@ -14,20 +14,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap"
           rel="stylesheet">
+    <!--TODO: Bootstrap icons-->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 <body>
 
 <!--TODO: Header Start here-->
-<header class="header p-3 position-absolute start-0 top-0 end-0">
+<header class="header p-3 position-absolute start-0 top-0 end-0" style="background-color: var(--primary-color)">
     <!--TODO: Because it the position-absolute -> need the z indexs -->
     <div class="d-flex justify-content-between align-items-center">
         <!--TODO: d-flex-> converting the div to flex box-->
         <!--TODO: Logo-->
         <a href="/" class="text-decoration-none text-white fs-5 fw-bold">TheCoffeeHouse</a>
+        <div>
+            <!--TODO: navbar-toggler -> boostrap docs-->
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                     viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+        </div>
     </div>
-
-
 </header>
+<!--TODO: Header End-->
+
+<!--TODO: nav-bar-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 ></script>
