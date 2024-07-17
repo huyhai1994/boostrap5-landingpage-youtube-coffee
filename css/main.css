@@ -3,7 +3,10 @@
     --primary-color-hightlight: #233D54;
     --bs-body-bg: #FBF0F6;
     --bs-body-font-family: 'Montserrat', sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 /*TODO: change the color of link*/
@@ -145,5 +148,27 @@ a:hover {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--bs-light)
+}
+
+.hero__scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+
+.hero__scroll-btn .bi {
+    /*TODO: add animation -> arrow icons */
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@Keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+    /* 100% {
+         transform: translateY(0);
+     }*/
 }
